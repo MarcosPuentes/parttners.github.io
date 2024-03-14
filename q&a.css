@@ -1,0 +1,55 @@
+
+
+    body {
+        font-family: Segoe UI, system-ui, -apple-system, sans-serif;
+        font-size: 1em;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #FFEEAA;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      nav {
+        background-color: #691B1B;
+        padding: 1px;
+        text-align: center;
+      }
+      
+      .nav {
+        --text-color: #FFEEAA;
+        border-block-end: 3px solid var(--border-color, transparent);
+        color: var(--text-color);
+        display: inline-block;
+        margin-block-end: 0.5rem; 
+        margin-inline-end: 0.5rem;
+        padding: 0.1rem;
+        text-decoration: none;
+        text-align: center;
+      }
+      
+      a:where(:hover, :focus) {
+        --border-color: var(--text-color);
+      }
+      
+      main {
+        min-height: calc(100vh - 200px); /* Subtract header and footer height */
+        background-color: grey;
+        background-size: cover;
+        margin: 0 auto;
+        width: 85%;
+        padding: 22px;
+      }
+      
+      footer {
+        height: auto;
+        text-align: center;
+        padding: 20px; 
+        background-color: #691B1B;
+        margin: 0 auto;
+        width: 85%;
+      }
+      
